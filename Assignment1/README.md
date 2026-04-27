@@ -1,37 +1,35 @@
-# Assignment1 - Circular Buffer Implementation (C)
+وصف المشروع:
 
-## Project Description
-This project implements a **Circular Buffer** in C language without using any built-in data structures.
-The program supports:
-- Buffer Initialization
-- Writing (Enqueue)
-- Reading (Dequeue)
-- Handling Overflow and Underflow cases
+هذا المشروع يقوم بتنفيذ Circular Buffer (المخزن الدائري) باستخدام لغة C بدون استخدام أي هياكل بيانات جاهزة.
+البرنامج يدعم العمليات التالية:
+تهيئة المخزن (Initialization)
+الكتابة (إدخال البيانات / Enqueue)
+القراءة (إزالة البيانات / Dequeue)
+التعامل مع حالتي الامتلاء(Overflow) والفراغ (Underflow)
 
-## How it Works
-1. The user enters their name using standard input.
-2. The program appends the string **"CE-ESY"** to the name.
-3. Each character is written into the circular buffer.
-4. The program reads the data back from the buffer and prints it.
-5. Finally, it checks that the buffer is empty.
+كيف يعمل البرنامج؟
+-يقوم المستخدم بإدخال اسمه باستخدام الإدخال القياسي (Standard Input).
+-يقوم البرنامج بإضافة النص "CE-ESY" إلى الاسم.
+-يتم تخزين كل حرف من الاسم داخل المخزن الدائري.
+-يقوم البرنامج بقراءة البيانات مرة أخرى من المخزن وعرضها على الشاشة.
+-في النهاية، يتم التأكد أن المخزن أصبح فارغاً.
 
-## Features
-- Circular buffer implemented using an array.
-- Uses `head` for reading and `tail` for writing.
-- Uses modulo operation to wrap around the buffer.
-- Detects:
-  - **Overflow** when buffer is full.
-  - **Underflow** when buffer is empty.
+الميزات:
+تنفيذ المخزن الدائري باستخدام مصفوفة (Array).
+استخدام المتغير head للقراءة و tail للكتابة.
+استخدام عملية الـ Modulo للرجوع إلى بداية المخزن عند الوصول للنهاية.
+كشف الحالات التالية:
+عند امتلاء المخزن Overflow.
+عند محاولة القراءة من مخزن فارغ Underflow.  
+الملفات الموجودة:
+-الملف الرئيسي: prog.c الذي يحتوي على الكود المصدري.
+-ملف الشرح: README.md الذي يحوي شرح عمل البرنامج.
 
-## Files Included
-- `prog.c` : Main source code.
+ملاحظات:
+تم اختيار حجم المخزن أصغر من حجم النص المدخل للتأكد من اختبار حالة Overflow كما هو مطلوب في الواجب.
 
-## Notes
-The buffer size was chosen smaller than the input string size to test the **Overflow** condition as required.
+طريقة التشغيل
 
-## How to Run
-Compile and run using:
-
-```bash
+لتجميع وتشغيل البرنامج استخدم الأوامر التالية:
 gcc prog.c -o prog
 ./prog
