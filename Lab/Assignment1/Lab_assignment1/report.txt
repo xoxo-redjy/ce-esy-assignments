@@ -1,9 +1,0 @@
-Info: Output directory 'C:\Users\ASUS\Documents\labproject\Lab_assignment1' created.
-Plotted to 'C:\Users\ASUS\Documents\labproject\Lab_assignment1\labproject.pdf'.
-
-Info: Done.
-Plotted to 'C:\Users\ASUS\Documents\labproject\Lab_assignment1\labproject.pdf'.
-
-Info: Done.
-Info: Done.
-Info: Done.
